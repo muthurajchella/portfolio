@@ -6,6 +6,45 @@
     box-sizing: border-box;
 }
 
+/* Sidebar Start*/
+.sidebar {
+    background-color: white;
+    float: left;
+    width: 0px;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 11px;
+    padding-bottom: 250px;
+    position: fixed;
+}
+
+.sidebar a{
+    width: 57px;
+    height: 40px;
+    font-size: 25px;
+    color: #45505b;
+    text-decoration: none;
+    display: block;
+    border-radius: 30px;
+    padding-top: 17px;
+    margin-top: 10px;
+    background-color: #f2f3f5;
+    transition: 0.5s;
+}
+
+.home a {
+    color: white;
+    background-color: #0563bb;
+}
+
+.sidebar a:hover{
+    background-color: #0563bb;
+    color: white;
+}
+/* Sidebar End*/
+
+/* banner Start*/
 .banner{
     width: 100%;
     height: auto;
@@ -38,7 +77,7 @@
 }
 
 .con h1:hover{
-    color: goldenrod;
+    color: #0563bb;
 }
 
 .con p{
@@ -68,7 +107,7 @@
 }
 
 .con ul li a:hover{
-    color: blue;
+    color: #0563bb;
 }
 
 .banner-img{
@@ -88,8 +127,81 @@
     position: absolute;
     z-index: 1;
     background-color: white;
-    width: 1000%;
+    width: 100%;
     height: 600px;
     opacity: 0.8;
 }
+/* Banner End*/
 
+/* About Start*/
+.about{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.about-main{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.about-head{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.about-head h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: #45505b;
+    font-weight: 700;
+}
+
+.hr1{
+    width: 127px;
+    height: 2px;
+    border-bottom: solid 1px #a6b3b2;
+    margin-left: 44%;
+    margin-top: 15px;
+}
+
+.hr2{
+    width: 50px;
+    height: 3px;
+    border-bottom: solid 3px #0563bb;
+    margin-left: 47.8%;
+    margin-top: -4.6px;
+}
+
+.about-head p{
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #272829;
+    line-height: 20px;
+}
+
+.about-body{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.about-img{
+    width: 25%;
+    height: 371px;
+    background-image: url(../img/raj5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+/* About End*/
