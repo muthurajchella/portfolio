@@ -1,8 +1,8 @@
 .container{
     width: auto;
     height: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
     box-sizing: border-box;
 }
 
@@ -120,7 +120,10 @@
 
 .con ul{
     display: flex;
-    margin-left: 25px;
+    width: 100%;
+    align-items: center;
+    /* margin-left: 25px; */
+    /* margin-left: 20%; */
 }
 
 .con ul li{
