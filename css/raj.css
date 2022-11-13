@@ -1,0 +1,523 @@
+@font-face {
+  font-family: "josefin";
+  src: url(../fonts/josefin/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "kolkar";
+  src: url(../fonts/kolkar/KolkerBrush-Regular.ttf);
+}
+
+.container {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Header Start*/
+header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.flexHeader {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexHeader h1 {
+  font-family: "kolkar";
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  color: purple;
+  font-weight: 400;
+}
+
+nav {
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+nav ul {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+}
+
+nav ul li {
+  flex-direction: column;
+  line-height: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "josefin";
+}
+
+#menubtn {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  color: rgb(247, 142, 82);
+}
+
+@media (min-width: 768px) {
+  #menubtn {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .flexHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    position: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul {
+    position: none;
+    top: 50px;
+    right: 0;
+    display: block;
+  }
+
+  nav ul li {
+    flex-direction: column;
+    line-height: 30px;
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-family: "josefin";
+    color: red;
+  }
+
+  #menubtn {
+    font-size: 25px;
+    display: none;
+    align-items: center;
+    color: rgb(247, 142, 82);
+  }
+}
+/*Header End */
+
+/*Banner Start*/
+.banner {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-image: url(../img/bannerhero10.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.flex-banner {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-img {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(138, 89, 253);
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px px rgb(189, 187, 196);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.banner-img img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  border-radius: 35px;
+  align-items: center;
+  box-shadow: 0px 0px 3px 0px rgb(191, 183, 211);
+}
+
+.name-flex h1 {
+  font-family: "josefin";
+  font-size: 1.3rem;
+  color: white;
+  line-height: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 50px;
+  border: solid 1px rgb(247, 142, 82);
+}
+
+.banner-img ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.banner-img ul li {
+  list-style: none;
+  margin: 7px;
+}
+
+.banner-img ul li a {
+  text-decoration: none;
+  color: rgb(111, 49, 255);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.banner-img ul li a:hover {
+  color: rgb(252, 162, 252);
+}
+
+.banner-con {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px 0px rgb(189, 187, 196);
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.banner-con-con {
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-con-con h1 {
+  font-family: "josefin";
+  font-size: 1.5rem;
+  color: rgb(131, 58, 248);
+}
+
+.banner-con-con p {
+  font-family: "josefin";
+  font-size: 1rem;
+  color: rgb(247, 142, 82);
+}
+
+.banner-con-con a {
+  text-decoration: none;
+  font-family: "josefin";
+  font-size: 1rem;
+  color: rgb(131, 58, 248);
+}
+
+details {
+  margin-top: 20px;
+  cursor: pointer;
+}
+summary {
+  color: rgb(247, 142, 82);
+  font-family: "josefin";
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 360px;
+  }
+  .banner-img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .banner-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  .name-flex h1 {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .banner-con {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .banner-con-con {
+    line-height: 40px;
+  }
+
+  .banner-con-con h1 {
+    font-family: "josefin";
+    font-size: 2rem;
+    color: rgb(131, 58, 248);
+  }
+
+  .banner-con-con p {
+    font-family: "josefin";
+    font-size: 1.5rem;
+    color: rgb(247, 142, 82);
+  }
+
+  .banner-con-con a {
+    text-decoration: none;
+    font-family: "josefin";
+    font-size: 1.5rem;
+    color: rgb(131, 58, 248);
+  }
+
+  details {
+    margin-top: 30px;
+  }
+  summary {
+    color: rgb(247, 142, 82);
+    font-family: "josefin";
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    width: 100%;
+    height: 500px;
+    position: none;
+  }
+
+  .flex-banner {
+    position: none;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .banner-img {
+    width: 49%;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  .banner-img img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    border-radius: 50px;
+  }
+
+  .name-flex h1 {
+    font-family: "josefin";
+    font-size: 2rem;
+    color: white;
+    line-height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  .banner-img ul {
+    margin-top: 3rem;
+  }
+
+  .banner-img ul li a {
+    font-size: 22px;
+  }
+
+  .banner-con {
+    width: 49%;
+    margin: auto;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 0px rgb(189, 187, 196);
+    padding-top: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+    margin-left: 1%;
+  }
+
+  .banner-con-con {
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-con-con h1 {
+    font-family: "josefin";
+    font-size: 1.8rem;
+    color: rgb(131, 58, 248);
+  }
+
+  .banner-con-con p {
+    font-family: "josefin";
+    font-size: 1.3rem;
+    color: rgb(247, 142, 82);
+  }
+
+  .banner-con-con a {
+    text-decoration: none;
+    font-family: "josefin";
+    font-size: 1.7rem;
+    color: rgb(131, 58, 248);
+  }
+
+  details {
+    margin-top: 20px;
+  }
+  summary {
+    color: rgb(247, 142, 82);
+    font-family: "josefin";
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    width: 100%;
+    height: 500px;
+    position: none;
+  }
+
+  .banner-img img {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    border-radius: 60px;
+  }
+
+  .name-flex h1 {
+    font-family: "josefin";
+    font-size: 2rem;
+    color: white;
+    line-height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  .banner-img ul {
+    margin-top: 3rem;
+  }
+
+  .banner-img ul li a {
+    font-size: 23px;
+  }
+
+  .banner-con {
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    margin-left: 1%;
+  }
+
+  .banner-con-con {
+    line-height: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-con-con h1 {
+    font-family: "josefin";
+    font-size: 1.9rem;
+    color: rgb(131, 58, 248);
+  }
+
+  .banner-con-con p {
+    font-family: "josefin";
+    font-size: 1.4rem;
+    color: rgb(247, 142, 82);
+  }
+
+  .banner-con-con a {
+    text-decoration: none;
+    font-family: "josefin";
+    font-size: 1.8rem;
+    color: rgb(131, 58, 248);
+  }
+
+  details {
+    margin-top: 20px;
+  }
+
+  summary {
+    color: rgb(247, 142, 82);
+    font-family: "josefin";
+    font-size: 1.4rem;
+  }
+}
+/*Banner End*/
