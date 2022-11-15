@@ -133,7 +133,7 @@ nav ul li a {
 /*Banner Start*/
 .banner {
   width: 100%;
-  height: 100px;
+  height: 200px;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -332,13 +332,13 @@ summary {
 @media (min-width: 1024px) {
   .banner {
     width: 100%;
-    height: 500px;
+    height: 570px;
     position: none;
   }
 
   .flex-banner {
     position: none;
-    top: 10%;
+    top: 15%;
     left: 10%;
     display: flex;
     justify-content: space-between;
@@ -521,3 +521,551 @@ summary {
   }
 }
 /*Banner End*/
+
+/*About Start*/
+.about{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 320px;
+  margin-bottom: 2rem;
+}
+
+.flexAbout{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.aboutConHead{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.aboutConHead h1{
+  font-family: 'josefin';
+  font-size: 1.3rem;
+  color: rgb(175, 59, 252);
+}
+
+.aboutConFlex{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.aboutVideo{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0px 0px 3px rgb(195, 193, 197);
+  background-color: rgb(151, 107, 253);
+  box-sizing: border-box;
+  margin-top: 1.2rem;
+  border-radius: 3px;
+}
+
+.aboutVideo video{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.proDetails{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0px 0px 3px rgb(198, 195, 201);
+  background-color: white;
+  box-sizing: border-box;
+  margin-top: 1.2rem;
+  border-radius: 3px;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.proDetails h1{
+  font-family: 'josefin';
+  font-size: 1.2rem;
+  color: rgb(132, 79, 255);
+}
+
+.proDetails h1 abbr{
+  text-decoration: none;
+  font-family: 'josefin';
+  font-size: 1.2rem;
+  color: rgb(132, 79, 255);
+}
+
+
+.proDetails h2{
+  font-family: 'josefin';
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgb(92, 88, 86);
+}
+
+.proDetails nav a{
+  text-decoration: none;
+  font-family: 'josefin';
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: rgb(64, 63, 66);
+} 
+
+.proDetails nav a i{
+  font-size: 1.2rem;
+}
+
+.proDetails p{
+  font-family: 'josefin';
+  font-size: 1rem;
+  color: rgb(80, 78, 77);
+}
+
+.proDetails p a{
+  text-decoration: none;
+  font-family: 'josefin';
+  font-size: 1rem;
+  color: rgb(73, 72, 75);
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+  .aboutConHead h1{
+    font-size: 1.5rem;
+  }
+  
+  .aboutVideo video{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .proDetails{
+    margin-top: 1.3rem;
+    line-height: 2rem;
+  }
+  
+  .proDetails h1{
+    font-size: 1.5rem;
+  }
+  
+  .proDetails h2{
+    font-size: 1.3rem;
+  }
+  
+  .proDetails nav a{
+    font-size: 1.2rem;
+  }
+  
+  .proDetails p{
+    font-size: 1.2rem;
+  }
+  
+  .proDetails p a{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .about{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .flexAbout{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .aboutConHead{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .aboutConHead h1{
+    font-family: 'josefin';
+    font-size: 2rem;
+    color: rgb(175, 59, 252);
+  }
+  
+  .aboutConFlex{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .aboutVideo{
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 3px rgb(195, 193, 197);
+    background-color: rgb(138 89 253);
+    box-sizing: border-box;
+    margin-top: 1.2rem;
+    border-radius: 3px;
+  }
+  
+  .aboutVideo video{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .proDetails{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 3px rgb(198, 195, 201);
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 1.2rem;
+    border-radius: 3px;
+    line-height: 2rem;
+    text-align: start;
+    margin-left: 1%;
+  }
+  
+  .proDetails h1{
+    font-family: 'josefin';
+    font-size: 1.5rem;
+    color: rgb(132, 79, 255);
+  }
+  
+  .proDetails h1 abbr{
+    text-decoration: none;
+    font-family: 'josefin';
+    font-size: 1.5rem;
+    color: rgb(132, 79, 255);
+  }
+  
+  
+  .proDetails h2{
+    font-family: 'josefin';
+    font-size: 1.2rem;
+    color: rgb(247, 142, 82);
+  }
+  
+  .proDetails nav a{
+    text-decoration: none;
+    font-family: 'josefin';
+    font-size: 1.2rem;
+    color: rgb(132, 79, 255);
+  }
+  
+  .proDetails p{
+    font-family: 'josefin';
+    font-size: 1.2rem;
+    color: rgb(247, 142, 82);
+  }
+  
+  .proDetails p a{
+    text-decoration: none;
+    font-family: 'josefin';
+    font-size: 1.2rem;
+    color: rgb(132, 79, 255);
+    cursor: pointer;
+  }
+}
+
+/*About End*/
+
+/*skills Start*/
+.skills{
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.skills h1{
+  font-family: 'josefin';
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: rgb(175, 59, 252);
+}
+
+.flexSkillsmain{
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem;
+  /* border: solid 1px red; */
+}
+
+.flexSkills{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px rgb(229, 229, 230);
+  /* border: solid 1px yellow; */
+}
+
+.outCricle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgb(221, 219, 219);
+  /* position: relative; */
+}
+
+.innerCricle{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'josefin';
+  font-size: 1rem;
+}
+
+circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: anims 2s linear forwards;
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anims{
+  100%{
+    stroke-dashoffset: 200;
+  }
+}
+
+.flexSkills h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: 'josefin';
+  color: rgb(76, 71, 80);
+}
+
+@media (min-width:768px){
+  .skills{
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .skills h1{
+    font-family: 'josefin';
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(175, 59, 252);
+  }
+  
+  .flexSkillsmain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: left; */
+    padding: 0rem;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px rgb(180, 164, 201);
+  }
+  
+  .flexSkills{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* line-height: 1rem; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    margin-top: 1rem;
+    /* justify-content: space-between; */
+    /* border: solid 1px yellow; */
+    padding-left: 1.7rem;
+  }
+  
+  .outCricle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(221, 219, 219);
+    /* position: relative; */
+  }
+  
+  .innerCricle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'josefin';
+    font-size: 1rem;
+  }
+  
+  circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: anims 2s linear forwards;
+  }
+  
+  svg{
+    position: absolute;
+    top: 0;
+    left: 1.7rem;
+  }
+  
+  @keyframes anims{
+    100%{
+      stroke-dashoffset: 200;
+    }
+  }
+  
+  .flexSkills h1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'josefin';
+    color: rgb(76, 71, 80);
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width:1024px){ 
+  .skills h1{
+    font-family: 'josefin';
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(175, 59, 252);
+  }
+  .flexSkills{
+    width: 33.33%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 1rem;
+    /* border: solid 1px yellow; */
+    padding-left: 5rem;
+  }
+  
+  .outCricle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(221, 219, 219);
+    /* position: relative; */
+  }
+  
+  .innerCricle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'josefin';
+    font-size: 1rem;
+  }
+  
+  circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: anims 2s linear forwards;
+  }
+  
+  svg{
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  }
+  
+  @keyframes anims{
+    100%{
+      stroke-dashoffset: 200;
+    }
+  }
+  
+  .flexSkills h1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'josefin';
+    color: rgb(76, 71, 80);
+    padding-top: 1.5rem;
+    padding-left: 1.3rem;
+  }
+
+}
+
+/*skills End*/
