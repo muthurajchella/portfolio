@@ -596,6 +596,34 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
+.myworks .workHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myworks .workHome .app{
+    background-color: var(--black);
+    border-radius: .2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.myworks .workHome .app h1 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.myworks .workHome .app:hover{
+    background-color: white;
+}
+
+.myworks .workHome .app a:hover{
+    color: var(--blue);
+}
+
 .contact{
     width: auto;
     min-height: 60vh;
