@@ -1,1028 +1,329 @@
-@font-face {
-  font-family: "josefin";
-  src: url(../fonts/josefin/JosefinSans-VariableFont_wght.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,200&display=swap');
+
+:root{
+    --blue: #0563bb;
+    --black: #45505b;
 }
 
-@font-face {
-  font-family: "kolkar";
-  src: url(../fonts/kolkar/KolkerBrush-Regular.ttf);
-}
-
-.container {
-  width: 70%;
-  height: auto;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-/* Header Start*/
-header {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.flexHeader {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.flexHeader h1 {
-  font-family: "kolkar";
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-size: 25px;
-  color: purple;
-  font-weight: 400;
-}
-
-nav {
-  width: 80%;
-  height: auto;
-  box-sizing: border-box;
-  position: relative;
-}
-
-nav ul {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  display: none;
-}
-
-nav ul li {
-  flex-direction: column;
-  line-height: 30px;
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: "josefin";
-}
-
-#menubtn {
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  color: rgb(247, 142, 82);
-}
-
-@media (min-width: 768px) {
-  #menubtn {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 1024px) {
-  header {
-    width: 100%;
-    height: auto;
-    margin: auto;
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-
-  .flexHeader {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav {
-    width: 80%;
-    height: auto;
-    box-sizing: border-box;
-    position: none;
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav ul {
-    position: none;
-    top: 50px;
-    right: 0;
-    display: block;
-  }
-
-  nav ul li {
-    flex-direction: column;
-    line-height: 30px;
-    list-style: none;
-  }
-
-  nav ul li a {
     text-decoration: none;
-    font-family: "josefin";
-    color: red;
-  }
-
-  #menubtn {
-    font-size: 25px;
-    display: none;
-    align-items: center;
-    color: rgb(247, 142, 82);
-  }
-}
-/*Header End */
-
-/*Banner Start*/
-.banner {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  background-image: url(../img/bannerhero10.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
-.flex-banner {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  display: flex;
-  flex-direction: column;
+*::selection{
+    background-color: var(--blue);
+    color: #333;
 }
 
-.banner-img {
-  width: 100%;
-  margin: auto;
-  background-color: rgb(138, 89, 253);
-  border-radius: 2px;
-  box-shadow: 0px 0px 3px px rgb(189, 187, 196);
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-.banner-img img {
-  width: 70px;
-  height: 70px;
-  margin: auto;
-  display: flex;
-  border-radius: 35px;
-  align-items: center;
-  box-shadow: 0px 0px 3px 0px rgb(191, 183, 211);
+html::-webkit-scrollbar{
+    width: 1.4rem;
 }
 
-.name-flex h1 {
-  font-family: "josefin";
-  font-size: 1.3rem;
-  color: white;
-  line-height: 30px;
-  transition: 0.5s;
-  cursor: pointer;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
 
-hr {
-  width: 50px;
-  border: solid 1px rgb(247, 142, 82);
-}
-
-.banner-img ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: bottom;
-  margin-top: 2rem;
-  background-color: white;
-}
-
-.banner-img ul li {
-  list-style: none;
-  margin: 7px;
-}
-
-.banner-img ul li a {
-  text-decoration: none;
-  color: rgb(111, 49, 255);
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.banner-img ul li a:hover {
-  color: rgb(252, 162, 252);
-}
-
-.banner-con {
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  border-radius: 2px;
-  box-shadow: 0px 0px 3px 0px rgb(189, 187, 196);
-  padding-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.banner-con-con {
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.banner-con-con h1 {
-  font-family: "josefin";
-  font-size: 1.5rem;
-  color: rgb(131, 58, 248);
-}
-
-.banner-con-con p {
-  font-family: "josefin";
-  font-size: 1rem;
-  color: rgb(247, 142, 82);
-}
-
-.banner-con-con a {
-  text-decoration: none;
-  font-family: "josefin";
-  font-size: 1rem;
-  color: rgb(131, 58, 248);
-}
-
-details {
-  margin-top: 20px;
-  cursor: pointer;
-}
-summary {
-  color: rgb(247, 142, 82);
-  font-family: "josefin";
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .banner {
-    height: 360px;
-  }
-  .banner-img {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .banner-img img {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-  }
-
-  .name-flex h1 {
-    font-size: 1.5rem;
-    display: inline-block;
-  }
-
-  .banner-con {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .banner-con-con {
-    line-height: 40px;
-  }
-
-  .banner-con-con h1 {
-    font-family: "josefin";
-    font-size: 2rem;
-    color: rgb(131, 58, 248);
-  }
-
-  .banner-con-con p {
-    font-family: "josefin";
-    font-size: 1.5rem;
-    color: rgb(247, 142, 82);
-  }
-
-  .banner-con-con a {
-    text-decoration: none;
-    font-family: "josefin";
-    font-size: 1.5rem;
-    color: rgb(131, 58, 248);
-  }
-
-  details {
-    margin-top: 30px;
-  }
-  summary {
-    color: rgb(247, 142, 82);
-    font-family: "josefin";
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .banner {
-    width: 100%;
-    height: 570px;
-    position: none;
-  }
-
-  .flex-banner {
-    position: none;
-    top: 15%;
-    left: 10%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .banner-img {
-    width: 49%;
-    padding-top: 50px;
-    display: flex;
-    padding-bottom: 50px;
-  }
-
-  .banner-img img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    border-radius: 50px;
-  }
-
-  .name-flex h1 {
-    font-family: "josefin";
-    font-size: 2rem;
-    color: white;
-    line-height: 40px;
-    transition: 0.5s;
-    cursor: pointer;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  hr {
-    width: 80px;
-    margin-top: 20px;
-  }
-
-  .banner-img ul {
-    margin-top: 3rem;
-  }
-
-  .banner-img ul li a {
-    font-size: 22px;
-  }
-
-  .banner-con {
-    width: 49%;
-    margin: auto;
+html::-webkit-scrollbar-track{
     background-color: white;
-    border-radius: 2px;
-    box-shadow: 0px 0px 3px 0px rgb(189, 187, 196);
-    padding-top: 45px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 45px;
-    margin-left: 1%;
-  }
-
-  .banner-con-con {
-    line-height: 35px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner-con-con h1 {
-    font-family: "josefin";
-    font-size: 1.8rem;
-    color: rgb(131, 58, 248);
-  }
-
-  .banner-con-con p {
-    font-family: "josefin";
-    font-size: 1.3rem;
-    color: rgb(247, 142, 82);
-  }
-
-  .banner-con-con a {
-    text-decoration: none;
-    font-family: "josefin";
-    font-size: 1.7rem;
-    color: rgb(131, 58, 248);
-  }
-
-  details {
-    margin-top: 20px;
-  }
-  summary {
-    color: rgb(247, 142, 82);
-    font-family: "josefin";
-    font-size: 1.3rem;
-  }
 }
 
-@media (min-width: 1440px) {
-  .banner {
-    width: 100%;
-    height: 500px;
-    position: none;
-  }
+html::-webkit-scrollbar-thumb{
+    background: var(--blue);
+}
 
-  .banner-img img {
-    width: 120px;
-    height: 120px;
-    margin: auto;
-    display: flex;
-    border-radius: 60px;
-  }
+body{
+    background-color: white;
+    overflow-x: hidden;
+    padding-left: 15rem;
+}
 
-  .name-flex h1 {
-    font-family: "josefin";
-    font-size: 2rem;
-    color: white;
-    line-height: 40px;
-    transition: 0.5s;
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
 
-  hr {
-    width: 80px;
-    margin-top: 20px;
-  }
-
-  .banner-img ul {
-    margin-top: 3rem;
-  }
-
-  .banner-img ul li a {
-    font-size: 23px;
-  }
-
-  .banner-con {
-    padding-top: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    margin-left: 1%;
-  }
-
-  .banner-con-con {
-    line-height: 45px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner-con-con h1 {
-    font-family: "josefin";
-    font-size: 1.9rem;
-    color: rgb(131, 58, 248);
-  }
-
-  .banner-con-con p {
-    font-family: "josefin";
-    font-size: 1.4rem;
-    color: rgb(247, 142, 82);
-  }
-
-  .banner-con-con a {
-    text-decoration: none;
-    font-family: "josefin";
+.btn i{
+    padding: 0 .5rem;
     font-size: 1.8rem;
-    color: rgb(131, 58, 248);
-  }
-
-  details {
-    margin-top: 20px;
-  }
-
-  summary {
-    color: rgb(247, 142, 82);
-    font-family: "josefin";
-    font-size: 1.4rem;
-  }
-}
-/*Banner End*/
-
-/*About Start*/
-.about{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: 320px;
-  margin-bottom: 2rem;
 }
 
-.flexAbout{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  text-align: center;
+.btn:hover{
+    background-color: var(--blue);
 }
 
-.aboutConHead{
-  width: 100%;
-  height: auto;
-  text-align: center;
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid rgba(51, 50, 50, 0.267);
+    color: var();
 }
 
-.aboutConHead h1{
-  font-family: 'josefin';
-  font-size: 1.3rem;
-  color: rgb(175, 59, 252);
+.heading span{
+    color: var(--blue);
 }
 
-.aboutConFlex{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  box-sizing: border-box;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 20rem;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    
 }
 
-.aboutVideo{
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  box-shadow: 0px 0px 3px rgb(195, 193, 197);
-  background-color: rgb(151, 107, 253);
-  box-sizing: border-box;
-  margin-top: 1.2rem;
-  border-radius: 3px;
-}
-
-.aboutVideo video{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.proDetails{
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  box-shadow: 0px 0px 3px rgb(198, 195, 201);
-  background-color: white;
-  box-sizing: border-box;
-  margin-top: 1.2rem;
-  border-radius: 3px;
-  line-height: 1rem;
-  text-align: center;
-}
-
-.proDetails h1{
-  font-family: 'josefin';
-  font-size: 1.2rem;
-  color: rgb(132, 79, 255);
-}
-
-.proDetails h1 abbr{
-  text-decoration: none;
-  font-family: 'josefin';
-  font-size: 1.2rem;
-  color: rgb(132, 79, 255);
-}
-
-
-.proDetails h2{
-  font-family: 'josefin';
-  font-size: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: rgb(92, 88, 86);
-}
-
-.proDetails nav a{
-  text-decoration: none;
-  font-family: 'josefin';
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  color: rgb(64, 63, 66);
+ header .user img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
 } 
 
-.proDetails nav a i{
-  font-size: 1.2rem;
+/* header .user .name{
+    font-size: 3.5rem;
+    color: #ffff;
 }
 
-.proDetails p{
-  font-family: 'josefin';
-  font-size: 1rem;
-  color: rgb(80, 78, 77);
-}
-
-.proDetails p a{
-  text-decoration: none;
-  font-family: 'josefin';
-  font-size: 1rem;
-  color: rgb(73, 72, 75);
-  cursor: pointer;
-}
-
-@media (min-width: 768px){
-  .aboutConHead h1{
-    font-size: 1.5rem;
-  }
-  
-  .aboutVideo video{
-    width: 100%;
-    height: 300px;
-    margin: auto;
-    box-sizing: border-box;
-  }
-  
-  .proDetails{
-    margin-top: 1.3rem;
-    line-height: 2rem;
-  }
-  
-  .proDetails h1{
-    font-size: 1.5rem;
-  }
-  
-  .proDetails h2{
-    font-size: 1.3rem;
-  }
-  
-  .proDetails nav a{
-    font-size: 1.2rem;
-  }
-  
-  .proDetails p{
-    font-size: 1.2rem;
-  }
-  
-  .proDetails p a{
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .about{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .flexAbout{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .aboutConHead{
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-  
-  .aboutConHead h1{
-    font-family: 'josefin';
+header .user .post{
     font-size: 2rem;
-    color: rgb(175, 59, 252);
-  }
-  
-  .aboutConFlex{
+    color: #eee;
+} */
+
+header .navbar{
     width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    box-sizing: border-box;
-  }
-  
-  .aboutVideo{
-    width: 49%;
-    height: auto;
-    padding: 10px;
-    box-shadow: 0px 0px 3px rgb(195, 193, 197);
-    background-color: rgb(138 89 253);
-    box-sizing: border-box;
-    margin-top: 1.2rem;
-    border-radius: 3px;
-  }
-  
-  .aboutVideo video{
-    width: 100%;
-    height: 300px;
-    margin: auto;
-    box-sizing: border-box;
-  }
-  
-  .proDetails{
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    box-shadow: 0px 0px 3px rgb(198, 195, 201);
-    background-color: white;
-    box-sizing: border-box;
-    margin-top: 1.2rem;
-    border-radius: 3px;
-    line-height: 2rem;
-    text-align: start;
-    margin-left: 1%;
-  }
-  
-  .proDetails h1{
-    font-family: 'josefin';
-    font-size: 1.5rem;
-    color: rgb(132, 79, 255);
-  }
-  
-  .proDetails h1 abbr{
-    text-decoration: none;
-    font-family: 'josefin';
-    font-size: 1.5rem;
-    color: rgb(132, 79, 255);
-  }
-  
-  
-  .proDetails h2{
-    font-family: 'josefin';
-    font-size: 1.2rem;
-    color: rgb(247, 142, 82);
-  }
-  
-  .proDetails nav a{
-    text-decoration: none;
-    font-family: 'josefin';
-    font-size: 1.2rem;
-    color: rgb(132, 79, 255);
-  }
-  
-  .proDetails p{
-    font-family: 'josefin';
-    font-size: 1.2rem;
-    color: rgb(247, 142, 82);
-  }
-  
-  .proDetails p a{
-    text-decoration: none;
-    font-family: 'josefin';
-    font-size: 1.2rem;
-    color: rgb(132, 79, 255);
-    cursor: pointer;
-  }
 }
 
-/*About End*/
-
-/*skills Start*/
-.skills{
-  width: 100%;
-  height: auto;
-  padding-top: 1rem;
-  box-sizing: border-box;
-}
-
-.skills h1{
-  font-family: 'josefin';
-  font-size: 1.3rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: rgb(175, 59, 252);
-}
-
-.flexSkillsmain{
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0rem;
-  /* border: solid 1px red; */
-}
-
-.flexSkills{
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  margin-top: 1rem;
-  justify-content: space-between;
-  box-shadow: 0px 0px 3px rgb(229, 229, 230);
-  /* border: solid 1px yellow; */
-}
-
-.outCricle{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  /* border: 1px solid red; */
-  /* padding: 20px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 5px rgb(221, 219, 219);
-  /* position: relative; */
-}
-
-.innerCricle{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'josefin';
-  font-size: 1rem;
-}
-
-circle{
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  animation: anims 2s linear forwards;
-}
-
-svg{
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@keyframes anims{
-  100%{
-    stroke-dashoffset: 200;
-  }
-}
-
-.flexSkills h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-  font-family: 'josefin';
-  color: rgb(76, 71, 80);
-}
-
-@media (min-width:768px){
-  .skills{
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-    box-sizing: border-box;
-  }
-  
-  .skills h1{
-    font-family: 'josefin';
-    font-size: 1.5rem;
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
     text-align: center;
-    padding-bottom: 1rem;
-    color: rgb(175, 59, 252);
-  }
-  
-  .flexSkillsmain{
+}
+
+header .navbar ul li a{
+    display: flex;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: white;
+    color: var(--blue);
+    font-size: 2rem;
+    border-radius: 5rem;  
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+header .navbar ul li a:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: #3333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    flex-flow: column;
+    padding: 0 15rem;
+    background-image: url(../img/raj5.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    line-height: 6rem;
+    position: relative;
+    z-index: 1;  
+}
+
+.home h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home h1{
+    font-size: 5rem;
+    color: var(--black);
+}
+
+.home h1 span{
+    color: var(--blue);
+}
+
+.home-blur:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: white;
+    height: 100%;
     width: 100%;
-    height: auto;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.home p{
+    width: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+   
+}
+
+.home p a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.home i:hover{
+    color: var(--blue);
+}
+
+.about .row{
+    display: flex;
     align-items: center;
-    /* text-align: left; */
-    padding: 0rem;
+    justify-content: center;
     flex-wrap: wrap;
-    box-shadow: 0px 0px 5px rgb(180, 164, 201);
-  }
-  
-  .flexSkills{
-    width: 50%;
-    height: auto;
-    margin: auto;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    /* line-height: 1rem; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    margin-top: 1rem;
-    /* justify-content: space-between; */
-    /* border: solid 1px yellow; */
-    padding-left: 1.7rem;
-  }
-  
-  .outCricle{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    /* border: 1px solid red; */
-    /* padding: 20px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 5px rgb(221, 219, 219);
-    /* position: relative; */
-  }
-  
-  .innerCricle{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'josefin';
-    font-size: 1rem;
-  }
-  
-  circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: anims 2s linear forwards;
-  }
-  
-  svg{
-    position: absolute;
-    top: 0;
-    left: 1.7rem;
-  }
-  
-  @keyframes anims{
-    100%{
-      stroke-dashoffset: 200;
-    }
-  }
-  
-  .flexSkills h1{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 1.2rem;
-    font-family: 'josefin';
-    color: rgb(76, 71, 80);
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-  }
+    padding: 1rem 0;
 }
 
-@media (min-width:1024px){ 
-  .skills h1{
-    font-family: 'josefin';
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 7rem;
+}
+
+.about .row .info h3{
     font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color: var(--black);
+    padding: 0 .5rem;
+}
+
+.about .row .video{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .row .video .video-box{
+    width: 30;
+    height: auto;
+    /* background-color: #222; */
     text-align: center;
-    padding-bottom: 1rem;
-    color: rgb(175, 59, 252);
-  }
-  .flexSkills{
-    width: 33.33%;
+    padding: 0rem;
+    margin: 2rem;
+}
+
+.about .row .video .video-box video{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.about p span{
+    padding-left: 0rem;
+    font-size: 3rem;
+    color: var(--blue);
+    line-height: 5rem;
+}
+
+.about p{
+    padding-left: 8rem;
+    font-size: 2rem;
+    color: block;
+}
+
+.myskills .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.myskills .box-container .box{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 3rem;
+}
+
+.myskills .box-container .box .flexSkills{
+    width: auto;
     height: auto;
     box-sizing: border-box;
     position: relative;
     display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0px 0px 3px rgb(229, 229, 230); */
     flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin-top: 1rem;
-    /* border: solid 1px yellow; */
-    padding-left: 5rem;
-  }
-  
-  .outCricle{
+    text-align: start;
+}
+
+.myskills .box-container .box .flexSkills .outCricle{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    /* border: 1px solid red; */
-    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 5px rgb(221, 219, 219);
-    /* position: relative; */
-  }
-  
-  .innerCricle{
+}
+
+
+.myskills .box-container .box .flexSkills .innerCricle{
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -1030,42 +331,502 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'josefin';
     font-size: 1rem;
-  }
-  
-  circle{
+}
+
+.myskills .box-container .box .flexSkills .innerCricle i{
+    font-size: 6rem;
+    color: var(--black);
+}
+
+.myskills .box-container .box .flexSkills svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.myskills .box-container .box .flexSkills .git circle{
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: anims 2s linear forwards;
-  }
-  
-  svg{
-    position: absolute;
-    top: 0;
-    left: 5rem;
-  }
-  
-  @keyframes anims{
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: git 2s linear forwards;
+}
+
+
+@keyframes git{
     100%{
-      stroke-dashoffset: 200;
+      stroke-dashoffset: 30;
     }
   }
-  
-  .flexSkills h1{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 1.5rem;
-    font-family: 'josefin';
-    color: rgb(76, 71, 80);
-    padding-top: 1.5rem;
-    padding-left: 1.3rem;
+
+  .myskills .box-container .box .flexSkills .html circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: html 2s linear forwards;
+}
+
+@keyframes html{
+    100%{
+      stroke-dashoffset: 30;
+    }
   }
+
+  .myskills .box-container .box .flexSkills .css circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: css 2s linear forwards;
+}
+
+@keyframes css{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+
+  
+  .myskills .box-container .box .flexSkills .boot circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: boot 2s linear forwards;
+}
+
+@keyframes boot{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+
+  
+  .myskills .box-container .box .flexSkills .js circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: js 2s linear forwards;
+}
+
+@keyframes js{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+.myskills .box-container .box .flexSkills .react circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: react 2s linear forwards;
+}
+
+@keyframes react{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+  .myskills .box-container .box .flexSkills .redux circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: redux 2s linear forwards;
+}
+
+@keyframes redux{
+    100%{
+      stroke-dashoffset: 105;
+    }
+  }
+
+.myskills .box-container .box .flexSkills .jq circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: jq 2s linear forwards;
+}
+
+@keyframes jq{
+    100%{
+      stroke-dashoffset: 125;
+    }
+  }
+
+.myskills .box-container .box .flexSkills .skillscon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #673ab7;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    background-color: #fef9ff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.myskills .box-container .box .flexSkills .skillscon:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #2f25af;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 1.7rem;
+    margin-left: 1.9rem;
+    background-color: #fef9ff;
+    opacity: 1;
+}
+
+.education{
+    width: auto;
+    min-height: 60vh;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 7rem;
+}
+
+.education .box-container .box{
+    width: 45rem;
+    margin: 4rem 1rem;
+    padding-left: 5rem;
+    border-left: .2rem solid rgb(44, 44, 44);
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-top: 1.5rem;
 
 }
 
-/*skills End*/
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: var(--black);
+    padding-top: 1rem 0;    
+}
+
+.education .box-container .box i{
+ position: absolute;
+ top: -1.5rem;
+ left: -2.5rem;
+ height: 5rem;
+ width: 5rem;
+ border-radius: 50%;
+ line-height: 5rem;
+ text-align: center;
+ font-size: 2rem;
+ color: #fff;
+ background-color: var(--blue);   
+}
+
+.myworks .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.myworks .box-container .box{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.myworks .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.myworks .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.contact{
+    width: auto;
+    min-height: 60vh;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding-left: 5rem;
+}
+
+.contact .row .content{
+    flex: 1 1 1 ;
+    padding: 4rem;
+    padding-bottom: 0;
+    margin-top: 5rem;
+    /* border: solid 1px black; */
+    box-shadow: 0px 0px 3px rgb(184, 180, 180);
+}
+
+.contact .row .content{
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 1rem 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem 0;
+    color: var(--blue);
+}
+
+
+.contact .row .content .info h3:hover{
+    color: var(--blue);
+}
+
+.contact .row .content .info ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: auto;
+    height: 8.5rem;
+
+}
+
+.contact .row .content .info ul li{
+    list-style: none;
+}
+
+.contact .row .content .info ul li a{
+    text-decoration: none;
+    font: 1.5rem;
+    color: var(--black);
+    padding-left: .5rem;
+}
+
+.footer{
+    width: auto;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 65, 78);
+    border-top: solid 2px rgb(88, 153, 238);
+}
+
+.footer-con h1{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    color: white;
+    line-height: 2rem;
+}
+
+
+.footer-con span{
+    color: var(--blue);
+    cursor: pointer;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding: 1rem 4rem;
+    }
+
+    .myskills .box-container .box .flexSkills .skillscon:hover{
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 991px){
+ header{
+    left: -120%;
+ }
+
+ #menu{
+    display: block;
+ }
+
+ #menu{
+    display: block;
+ }
+
+ header.toggle{
+    left: 0%;
+ }
+
+ body{
+    padding: 0;
+ }
+
+ .myskills .box-container .box .flexSkills .skillscon:hover{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+}
+
+
+@media (max-width: 768px){
+   html{
+    font-size: 50%;
+   }
+
+   .myskills .box-container .box .flexSkills .skillscon:hover{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+   
+   }
+
+
+@media (max-width: 360px){
+    header{
+       width: 200vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+
+    .home h3{
+        font-size: 2rem;
+    }
+    
+    .home h1{
+        font-size: 3.5rem;
+    }
+
+    .about .row .img .img-box{
+        width: 100%;
+    }
+
+    .education .box-container .box{
+        width: 100%;
+
+    }
+
+    .myworks .box-container .box{
+        width: 100%;
+    }
+
+    .about .row .info{
+        width: 100%;
+        flex: 1 1 48rem;
+        padding: 2rem 1rem;
+        padding-left: 7rem;
+    }
+    
+    .about .row .info h3{
+        font-size: 3rem;
+        color: var(--blue);
+        padding: 1rem 0;
+        font-weight: normal;
+    }
+    
+    .about .row .info h3 span{
+        padding: 0 .8rem;
+    }
+    
+    .about .row .video{
+        width: 100%;
+    }
+
+    .myskills .box-container .box{
+        width: 100%;
+    }
+
+        
+    .myskills .box-container .box .flexSkills .skillscon:hover{
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+   
+   }
