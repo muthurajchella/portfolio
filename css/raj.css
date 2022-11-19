@@ -668,6 +668,10 @@ header .navbar ul li a:hover{
     padding-left: .5rem;
 }
 
+.contact .row .content .info ul li a:hover{
+    color: var(--blue);
+}
+
 .footer{
     width: auto;
     min-height: 20vh;
